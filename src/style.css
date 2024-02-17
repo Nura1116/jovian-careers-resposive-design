@@ -74,6 +74,27 @@ h1 {
     width: 100%;
 }
 
+/* Reduces spacing on mobile and increase for table */
+/* Can combine h2 selector with h1 if same*/
+h2 {
+    text-align: center;
+}
+
+#jobs {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#jobs-list {
+    display: block;
+}
+
+#jobs-table {
+    display: none;
+}
+
+
 /* Small devices ( tablets ) */
 @media screen and (min-width: 576px) {
     html {
@@ -101,6 +122,7 @@ h1 {
         margin: 0 auto;
         padding: 8px;
     }
+
 }
 
 /* Medium devices ( laptops ) */
@@ -126,6 +148,39 @@ h1 {
     #team {
         width: 50%;
     }
+
+    #jobs {
+        min-width: 800px;
+    }
+
+    #jobs-list {
+        display: none;
+    }
+
+    #jobs-table {
+        display: table;
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+
+    .jobs-header-row th{
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: #dbeafe;
+        text-align: center;
+        color: #222222;
+    }
+    
+    .jobs-data-row td{
+        border: 1px solid gray;
+        padding: 8px;
+    }
+    
+    #jobs-table tr:nth-child(odd) {
+        background-color: #eff6ff;
+    }
+    
 }
 
 /* Large devices ( desktops ) */
@@ -143,33 +198,6 @@ h1 {
 
 
 /*
-
-#jobs-table {
-    width: 100%;
-    border: 1px solid gray;
-    border-collapse: collapse;
-}
-
-.jobs-header-row th{
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: #dbeafe;
-    text-align: center;
-    color: #222222;
-}
-
-.jobs-data-row td{
-    border: 1px solid gray;
-    padding: 8px;
-}
-
-#jobs-table tr:nth-child(odd) {
-    background-color: #eff6ff;
-}
-
-h2 {
-    text-align: center;
-}
 
 #application {
     max-width: 800px;
@@ -208,12 +236,6 @@ h2 {
     color: white;
     font-weight: 500;
     cursor: pointer;
-}
-
-#jobs {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
 }
 
 h3 {
