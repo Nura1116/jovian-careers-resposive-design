@@ -112,6 +112,66 @@ h2 {
     color: #555555;
 }
 
+#application {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-group textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+
+.form-group input[type="submit"]{
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #fafafa;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer-links li {
+    margin: 8px 16px;
+}
+
+.copyright {
+    color: #71717a;
+    font-size: 0.875rem;
+}
+
 /* Small devices ( tablets ) */
 @media screen and (min-width: 576px) {
     html {
@@ -134,10 +194,16 @@ h2 {
         margin: 16px 0;
     }
 
-    #about {
-        display: flex;
-        margin: 0 auto;
-        padding: 8px;
+    .form-group input, select {
+        width: auto;
+    }
+
+    .form-group textarea {
+        width: 80%;
+    }
+
+    #footer-links li {
+        display: inline;
     }
 
 }
@@ -197,6 +263,10 @@ h2 {
     #jobs-table tr:nth-child(odd) {
         background-color: #eff6ff;
     }
+
+    #application {
+        max-width: 800px;
+    }
     
 }
 
@@ -211,72 +281,3 @@ h2 {
         height: 300px;
     }
 }
-
-
-
-/*
-
-#application {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-
-.form-group {
-    margin: 16px 0;
-}
-
-#application-form label {
-    font-weight: 600;
-}
-
-#application-form input, select, textarea {
-    padding: 8px;
-    font-size: 1.25rem;
-    margin-top: 4px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-
-.form-group textarea {
-    width: 80%;
-    font-family: 'Roboto', sans-serif;
-}
-
-.form-group input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
-}
-
-.form-group input[type="submit"]{
-    background-color: #3b82f6;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-h3 {
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-#footer {
-    background-color: #fafafa;
-    padding: 8px;
-    margin-top: 32px;
-    text-align: center;
-}
-
-#footer-links {
-    list-style: none;
-}
-
-#footer-links li {
-    display: inline;
-    margin: 0 16px;
-}
-
-.copyright {
-    color: #71717a;
-    font-size: 0.875rem;
-} */
