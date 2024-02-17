@@ -38,16 +38,94 @@ a:hover {
     margin: 0;
 }
 
+#logo-with-text {
+    display: none;
+}
+
+#banner {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 0;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description {
+    font-size: 1.25rem;
+}
+
+#team {
+    width: 100%;
+}
+
+#team-image {
+    border-radius: 5px;
+    width: 100%;
+}
+
 /* Small devices ( tablets ) */
 @media screen and (min-width: 576px) {
     html {
         font-size: 16px;
     }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-with-text {
+        display: block;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    h1 {
+        margin: 16px 0;
+    }
+
+    #about {
+        display: flex;
+        margin: 0 auto;
+        padding: 8px;
+    }
 }
 
 /* Medium devices ( laptops ) */
 @media screen and (min-width: 768px) {
+    #banner {
+        height: 280px;
+    }
 
+    h1 {
+        margin: 20px 0;
+    }
+
+    #about {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    #description {
+        width: 50%;
+        padding-right: 8px;
+    }
+
+    #team {
+        width: 50%;
+    }
 }
 
 /* Large devices ( desktops ) */
@@ -56,49 +134,15 @@ a:hover {
 }
 
 /* Extra large devices ( large desktops ) */
-@media screen and (min-width: 12000px) {
-
+@media screen and (min-width: 1200px) {
+    #banner {
+        height: 300px;
+    }
 }
 
 
 
 /*
-
-#navbar {
-    padding: 8px;
-    margin: 0;
-}
-
-h1 {
-    text-align: center;
-}
-
-#banner {
-    width: 100%;
-    object-fit: cover;
-}
-
-#about {
-    display: flex;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 8px;
-}
-
-#description {
-    width: 50%;
-    padding-right: 8px;
-    font-size: 1.25rem;
-}
-
-#team {
-    width: 50%;
-}
-
-#team-image {
-    border-radius: 5px;
-    width: 100%;
-}
 
 #jobs-table {
     width: 100%;
